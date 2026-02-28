@@ -1,18 +1,21 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
-  <head>
-    <title>MAAF KARDOO CUTUU??</title>
+<head>
+  <title>Maaf Karde</title>
+
   <style>
     body {
-      background-color : #ffe6f0;
-      text-align:center;
-      font-family: Arial , sans-serif;
-      margin-top: 100px;
+      background-color: #ffe6f0;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 150px;
     }
+
     h1 {
       font-size: 40px;
-      color: #ff4d88 ;
+      color: #ff4d88;
     }
+
     button {
       padding: 15px 30px;
       font-size: 20px;
@@ -20,47 +23,49 @@
       border-radius: 12px;
       cursor: pointer;
       margin: 20px;
-      transition: 0.3s;
     }
-    yesbtn {
+
+    #yesBtn {
       background-color: #ff66a3;
       color: white;
     }
+
+    #noBtn {
+      background-color: #cccccc;
+    }
+
     #message {
       font-size: 24px;
       margin-top: 30px;
       color: #ff1a75;
     }
-    
-
   </style>
 </head>
+
 <body>
 
-  <h1>MAAF KARDE NA CUTU BABYY</h1>
+  <h1>MAAF KARDE NA CUTU BABYY 🥺</h1>
 
-  <button id="yesbtn"
-    onclick="forgive( )">YES</button>
-  <button id="nobtn"
-    onmouseover="moveButton( )">NO</button>
-   <div id="message"></div>
+  <button id="yesBtn" onclick="forgive()">YES 💕</button>
+  <button id="noBtn" onmouseover="moveButton()">NO 😒</button>
+
+  <div id="message"></div>
 
   <script>
     function forgive() {
-      document.getElementbyId("message").innerHTML="I promise to be better baby aisa nahi karna chahiye tha baby mujhe soo sorryy cutuu baabyy";
+      document.getElementById("message").innerHTML =
+        "sorryyy cutuu galti hogyi thi mujhse 😌❤️ I promise I’ll behave.";
     }
 
-    function movebutton() {
-      var button =
-        document.getElementBYId("noBtn");
-      var x = Math.random() *
-        window.innerHeight *0.8;
+    function moveButton() {
+      var button = document.getElementById("noBtn");
+      var x = Math.random() * (window.innerWidth - 100);
+      var y = Math.random() * (window.innerHeight - 50);
       button.style.position = "absolute";
       button.style.left = x + "px";
       button.style.top = y + "px";
     }
   </script>
-
 
 </body>
 </html>
